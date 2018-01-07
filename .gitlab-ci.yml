@@ -8,10 +8,11 @@ cache:
 pages:
   stage: deploy
   script:
-   - npm install metalsmith
-   - make build
+  - mkdir .public
+  - cp -r * .public
+  - mv .public public
   artifacts:
     paths:
-      - public
+    - public
   only:
-  - master 
+  - master
