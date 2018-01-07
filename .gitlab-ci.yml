@@ -1,19 +1,23 @@
 image: node:8
 
+before_scripts:
+  - npm install
+  - npm i gulp -g
+
 cache:
   paths:
     - node_modules/
 
-test:build:
-  script:
-   - npm install
-   - npm i gulp -g
-   - npm run build
+# test:build:
+#   script:
+#    - npm install
+#    - npm i gulp -g
+#    - npm run build
 
 pages:
   stage: deploy
   script:
-    - mv .build build
+    - mv build
   artifacts:
     paths:
       - build
