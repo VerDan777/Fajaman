@@ -37,6 +37,7 @@
     "gulp-watch": "^4.3.11",
     "run-sequence": "^2.2.1",
     "sass-module-importer": "^1.4.0",
+    "webpack": "^3.10.0",
     "webpack-stream": "^4.0.0"
   }
 }
