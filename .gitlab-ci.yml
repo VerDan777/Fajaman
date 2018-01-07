@@ -1,4 +1,4 @@
-image: node:lastest
+image: node:8
 
 
 before_script:
@@ -9,25 +9,10 @@ cache:
   paths:
     - node_modules/
 
-test:lint:
-  script:
-    - npm run lint
 test:watch:
   script:
    - npm run watch
-test:build:
-    script:
-     - npm run build
 
-pages:
-  stage: deploy
-  script:
-  - mv .build build
-  artifacts:
-    paths:
-    - public
-  only:
-  - master
   
 
    
