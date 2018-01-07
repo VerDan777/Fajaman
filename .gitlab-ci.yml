@@ -1,16 +1,13 @@
-image: node:8.9
+image: node:4.2.2
 
-cache:
-  paths:
-    - node_modules/
-
-   
 pages:
-  stage: deploy
+  cache:
+    paths:
+    - node_modules
+
   script:
-  - mkdir .public
-  - cp -r * .public
-  - mv .public public
+  - npm install -g harp
+  - harp compile ./ public
   artifacts:
     paths:
     - public
