@@ -4,23 +4,31 @@ cache:
   paths:
     - node_modules/
 
-test:CssLint:
+stages:
+  - build
+  - test
+  - deploy
+
+csslint:
   script:
     - npm install
     - npm i stylelint -g
     - npm run csslint
-    
-test:lint:
+  stage: test
+
+jslint:
   script:
     - npm install
-    - npm eslint -g
+    - npm eslint --save-dev
     - npm run lint
+  stage: test
 
-test:build:
+building:
   script:
     - npm install
     - npm i gulp -g
     - npm run build
+  stage: build
 
 pages:
   stage: deploy
