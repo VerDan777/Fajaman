@@ -1,0 +1,19 @@
+.site-header {
+  background-image: url("./img/background1.jpg");
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 15px;
+}
+
+.site-header__title {
+  height: 66px;
+  width: 240px;
+  margin-left: 15px;
+  display: inline-block;
+}
+
+.site-header__title img {
+  height: 100%;
+  width: 100%;
+}

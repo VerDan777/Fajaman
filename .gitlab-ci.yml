@@ -6,15 +6,8 @@ cache:
 
 stages:
   - build
-  - test
   - deploy
 
-csslint:
-  script:
-    - npm install
-    - npm i stylelint -g
-    - npm run csslint
-  stage: test
 
 building:
   script:

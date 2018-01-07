@@ -1,0 +1,27 @@
+.info {
+	// display: flex;
+	padding-top: 25px;
+
+	&__list {
+		display: flex;
+		list-style: none;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		padding-left: 0;
+	}
+
+	&__text {
+		color: #a3683f;
+		font-size: 15px;
+		font-family:  $Roboto;
+		font-weight: 500;
+		display: block;
+		// text-align: center;
+		line-height: 30px;
+		letter-spacing: 3;
+
+		&--light {
+			font-weight: 100;
+		}
+	}
+}

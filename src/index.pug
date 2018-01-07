@@ -6,6 +6,94 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Персональный тренер по личностному росту
         link(rel="stylesheet", href="styles.css")
+        link(href="https://fonts.googleapis.com/css?family=Lora|Roboto" rel="stylesheet")
+
+
     body
-        header.site-header.site-header-2
+        header.site-header
+            .site-header__title: img(src="./img/title.svg")
+            .menu-icon: .menu-icon__middle
+            .info
+                ul.info__list
+                    li.info__item
+                        span.info__text Email:
+                             span.info__text.info__text--light bogdan.yankevich@gmail.com
+                    li.info__item
+                            span.info__text Телефон:
+                                span.info__text.info__text--light +7 (916)-331-78-42
+    
+            nav.main-menu
+                ul.main-menu__list
+                    li.main-menu__item: a.main-menu__link(href="index.html") Главная
+                    li.main-menu__item: a.main-menu__link(href="index.html") Услуги
+                    li.main-menu__item: a.main-menu__link(href="index.html") Обо мне
+                    li.main-menu__item: a.main-menu__link(href="index.html") Отзывы
+                    li.main-menu__item: a.main-menu__link(href="index.html") Контакты
+            article.promo
+                ul.promo__list
+                    li.promo__item: p.promo__text “Здравствуйте, я хочу изменить свою жизнь” - так обычно начинаются письма которые я получаю.
+                    li.promo__item: p.promo__text  По статистике большинство людей сталкиваясь в своей жизни с трудностями, хотят решать их самостоятельно, но порой они даже и не знают, как правильно планировать свою жизнь, как самостоятельно реализовывать поставленные цели, как налаживать межличностные отношения и как контролировать свои эмоции.
+                    li.promo__item: p.promo__text  Меня зовут Богдан и если Вы хотите научиться самостоятельно решать свои проблемы, то тогда пришло время нам с вами познакомиться.
+
+            .site-header__features
+                ul.site-header__features-list
+                    li.site-header__features-item: img(src="./img/money.svg" alt="money")
+                    li.site-header__features-item: img(src="./img/crysis.svg" alt="creative crysis")
+                    li.site-header__features-item: img(src="./img/clock.svg" alt="time")
+                    li.site-header__features-item: img(src="./img/habits.svg" alt="harmful habits")
+
+        section.advantages
+            h2.advantages__main-title я помогу решить вам такие&nbsp;проблемы:
+            ul.advantages__list
+                li.advantages__item
+                    .advantages__img: img(src="./img/jobs.svg" alt="img")
+                    .advantages__content
+                        h4.advantages__title Сложности на работе
+                        p.advantages__text Все валится из рук. Не могу сконцентрироваться на работе. Замучили частые конфликты.
+                li.advantages__item
+                    .advantages__img: img(src="./img/targets.svg" alt="img")                
+                    .advantages__content
+                        h4.advantages__title Сложности на работе
+                        p.advantages__text Все валится из рук. Не могу сконцентрироваться на работе. Замучили частые конфликты.
+                    
+                li.advantages__item
+                    .advantages__img: img(src="./img/habits.svg" alt="img")                
+                    .advantages__content
+                        h4.advantages__title Сложности на работе
+                        p.advantages__text Все валится из рук. Не могу сконцентрироваться на работе. Замучили частые конфликты.
+                    
+                li.advantages__item
+                    .advantages__img: img(src="./img/fin-problems.svg" alt="img")                
+                    .advantages__content
+                        h4.advantages__title Сложности на работе
+                        p.advantages__text Все валится из рук. Не могу сконцентрироваться на работе. Замучили частые конфликты.
+                li.advantages__item
+                    .advantages__img: img(src="./img/indifference.svg" alt="img")                
+                    .advantages__content
+                        h4.advantages__title Сложности на работе
+                        p.advantages__text Все валится из рук. Не могу сконцентрироваться на работе. Замучили частые конфликты.
+                li.advantages__item
+                    .advantages__img: img(src="./img/fatigue.svg" alt="img")                
+                    .advantages__content
+                        h4.advantages__title Сложности на работе
+                        p.advantages__text Все валится из рук. Не могу сконцентрироваться на работе. Замучили частые конфликты.
+
+        section.about
+            article.about__board
+                .about__img: img(src="./img/me.jpg" alt="me")
+                .about__content
+                    h4.about__author Богдан Янкевич
+                    sub.about__profession дипломированный психолог 
+                    ul.about__list
+                        li.about__item: p.about__text Родился 26.02.1982 г. Москвич. Уже с детства знал, что хочу заниматься психологией и помогать людям решать проблемы которые им кажутся неразрешимыми.
+                        li.about__item: p.about__text Более 5 лет занимаюсь частной практикой и являюсь тренером по личностного росту. В совершенстве владею английским языком. Разработал уникальный, в своем роде, индивидуальный подход помощи в самореализации и выявлении потребностей к каждому обратившемуся человеку.
+                        li.about__item: p.about__text Более 80% моих клиентов показывают отличные результаты. Они реализуют поставленные задачи и цели, не только в профессиональных, а и в различных сферах своей деятельности.
+                        li.about__item: p.about__text На мой взгляд, развитие не определяется только одним направлением, это процесс затрагивающий все сферы жизни, начиная от психологического и физического здоровья, заканчивая отношениями с окружающим миром.
+          
+
+
+
             
+            
+            
+                
