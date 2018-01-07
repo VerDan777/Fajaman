@@ -1,0 +1,23 @@
+image: node:8
+
+
+before_script:
+  - npm install
+  - npm install -g gulp
+  
+cache:
+  paths:
+    - node_modules/
+
+test:watch:
+  script:
+   - npm run watch
+test:build:
+  script:
+   - npm run build
+  
+
+   
+   
+ 
+    
