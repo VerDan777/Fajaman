@@ -1,0 +1,36 @@
+image: node:lastest
+
+
+before_script:
+  - npm install
+  - npm install -g gulp
+  
+cache:
+  paths:
+    - node_modules/
+
+test:lint:
+  script:
+    - npm run lint
+test:watch:
+  script:
+   - npm run watch
+test:build:
+    script:
+     - npm run build
+
+pages:
+  stage: deploy
+  script:
+  - mv .build build
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
+  
+
+   
+   
+ 
+    
