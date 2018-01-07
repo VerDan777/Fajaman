@@ -32,5 +32,8 @@
     "gulp-watch": "^4.3.11",
     "sass-module-importer": "^1.4.0",
     "webpack-stream": "^4.0.0"
+  },
+  "dependencies": {
+    "normalize.css": "^7.0.0"
   }
 }

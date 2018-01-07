@@ -1,1 +1,8 @@
- body {background-color: blue;}
+// Normalize
+@import "normalize.css";
+
+// modules
+
+body {
+    background-color: red;
+}
