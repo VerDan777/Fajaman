@@ -4,9 +4,9 @@ const run = require('run-sequence');
 gulp.task('build', (fn)=> {
     run(
         'clean',
-        'copy',
         'styles',
         'scripts',
+        'copy',
         'ImageMin',
         fn
     );
