@@ -2,11 +2,13 @@
   "name": "fajaman",
   "version": "1.0.0",
   "description": "site for fajaman",
-  "main": "index.js",
+  "main": ".eslintrc.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "gulp watch",
-    "build": "gulp build"
+    "build": "gulp build",
+    "lint": "eslint ./src/js/**/*.js --fix",
+    "csslint": "stylelint ./src/scss/**/*.scss --fix"
   },
   "repository": {
     "type": "git",
