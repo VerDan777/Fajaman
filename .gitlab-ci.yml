@@ -16,13 +16,6 @@ csslint:
     - npm run csslint
   stage: test
 
-jslint:
-  script:
-    - npm install
-    - npm eslint --save-dev
-    - npm run lint
-  stage: test
-
 building:
   script:
     - npm install
