@@ -4,7 +4,9 @@
   "description": "site for fajaman",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npm run lint",
+    "watch": "gulp watch"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,9 @@
   },
   "homepage": "https://github.com/VerDan777/Fajaman#readme",
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
     "browser-sync": "^2.23.1",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
@@ -32,8 +37,5 @@
     "gulp-watch": "^4.3.11",
     "sass-module-importer": "^1.4.0",
     "webpack-stream": "^4.0.0"
-  },
-  "dependencies": {
-    "normalize.css": "^7.0.0"
   }
 }
