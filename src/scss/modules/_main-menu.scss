@@ -34,8 +34,14 @@
 		justify-content: space-between;
 
 		&--footer {
+			list-style: none;
+			padding-left: 0;
 			display: flex;
 			justify-content: space-between;
+
+			@include atSmall {
+				flex-direction: column;
+			}
 		}
 	}
 
@@ -46,7 +52,14 @@
 		padding-bottom: 50px;
 
 		&--footer {
+			padding-right: 5px;
+			padding-bottom: 0;
+			font-family:  $Roboto;
 
+			@include atSmall {
+				padding-right: 0px;
+				padding-bottom: 20px;
+			}
 		}
 	}
 
@@ -61,6 +74,8 @@
 			color: $text;
 			font-size: 1rem;
 			font-weight: 500;
+			text-decoration: none;
+			text-shadow: 0 2px 6px rgba(0, 0, 0, .15);		
 		}
 	}
 	&--shown {

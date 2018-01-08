@@ -180,6 +180,8 @@ a:hover {
 }
 
 .main-menu__list--footer {
+  list-style: none;
+  padding-left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,6 +201,12 @@ a:hover {
   padding-bottom: 50px;
 }
 
+.main-menu__item--footer {
+  padding-right: 5px;
+  padding-bottom: 0;
+  font-family: "Roboto", sans-serif;
+}
+
 .main-menu__link {
   text-decoration: none;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
@@ -211,6 +219,8 @@ a:hover {
   color: #4f4943;
   font-size: 1rem;
   font-weight: 500;
+  text-decoration: none;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 .main-menu--shown {
@@ -548,6 +558,7 @@ a:hover {
   height: 66px;
   width: 240px;
   margin: 0 auto;
+  margin-top: 50px;
   margin-bottom: 25px;
   display: block;
 }
@@ -636,5 +647,19 @@ a:hover {
 
   .menu-icon {
     display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .main-menu__list--footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .main-menu__item--footer {
+    padding-right: 0px;
+    padding-bottom: 20px;
   }
 }
