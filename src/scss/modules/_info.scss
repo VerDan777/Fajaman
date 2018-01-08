@@ -8,6 +8,13 @@
 		flex-wrap: wrap;
 		justify-content: space-around;
 		padding-left: 0;
+		
+
+		&--footer {
+			flex-direction: column;
+			// justify-content: center;
+			align-items: center;
+		}
 	}
 
 	&__text {
@@ -16,12 +23,17 @@
 		font-family:  $Roboto;
 		font-weight: 500;
 		display: block;
-		// text-align: center;
 		line-height: 30px;
 		letter-spacing: 3;
 
 		&--light {
-			font-weight: 100;
+			font-weight: 300;
+		}
+
+		&--footer {
+			text-shadow: 0 2px 6px rgba(0, 0, 0, .15);
+			color: $text;
+			text-align: left;
 		}
 	}
 }

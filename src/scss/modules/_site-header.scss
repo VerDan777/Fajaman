@@ -1,6 +1,6 @@
 .site-header {
 	background-image: url('./img/background1.jpg');
-	height: 100vh;
+	height: 100% ;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center 90%;
@@ -16,5 +16,34 @@
 			height: 100%;
 			width: 100%;
 		}
+	}
+	&__features {
+		display: flex;
+		justify-content: center;
+	}
+	&__features-list {
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		// align-items: flex-end;
+		// vertical-align: bottom;
+		margin-top: 0;
+		margin-bottom: 25px;
+		flex-wrap: wrap;
+		padding-left: 0;
+	}
+
+	&__desc {
+		color: #f3e2d4;
+		font-family: $Roboto;
+		line-height: 16px;
+		font-weight: 100;
+		text-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+	}
+
+	&__features-item {
+		text-align: center;
+		width: 50%;
+		display: inline-block;
 	}
 }

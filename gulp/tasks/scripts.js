@@ -20,6 +20,7 @@ const config = {
             exclude: /node_modules/
         }]
     },
+    devtool: 'source-map',
     plugins: [
         new webpack2.DefinePlugin({
           'process.env': { 'NODE_ENV': "'production'" }

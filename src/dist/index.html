@@ -23,10 +23,10 @@
       <nav class="main-menu">
         <ul class="main-menu__list">
           <li class="main-menu__item"><a class="main-menu__link" href="index.html">Главная</a></li>
-          <li class="main-menu__item"><a class="main-menu__link" href="index.html">Услуги</a></li>
-          <li class="main-menu__item"><a class="main-menu__link" href="index.html">Обо мне</a></li>
-          <li class="main-menu__item"><a class="main-menu__link" href="index.html">Отзывы</a></li>
-          <li class="main-menu__item"><a class="main-menu__link" href="index.html">Контакты</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="index.html#advantages">Услуги</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="index.html#about">Обо мне</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="index.html#reviews">Отзывы</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="index.html#contacts">Контакты</a></li>
         </ul>
       </nav>
       <article class="promo">
@@ -44,10 +44,22 @@
       </article>
       <div class="site-header__features">
         <ul class="site-header__features-list">
-          <li class="site-header__features-item"><img src="./img/money.svg" alt="money"/></li>
-          <li class="site-header__features-item"><img src="./img/crysis.svg" alt="creative crysis"/></li>
-          <li class="site-header__features-item"><img src="./img/clock.svg" alt="time"/></li>
-          <li class="site-header__features-item"><img src="./img/habits.svg" alt="harmful habits"/></li>
+          <li class="site-header__features-item">
+            <div class="site-header__img"><img src="./img/money.svg" alt="money"/></div>
+            <h5 class="site-header__desc">Проблемы с денежными тратами</h5>
+          </li>
+          <li class="site-header__features-item">
+            <div class="site-header__img"><img src="./img/crysis.svg" alt="creative crysis"/></div>
+            <h5 class="site-header__desc">Творческий кризис</h5>
+          </li>
+          <li class="site-header__features-item">
+            <div class="site-header__img"><img src="./img/clock.svg" alt="time"/></div>
+            <h5 class="site-header__desc">Проблемы с организованностью</h5>
+          </li>
+          <li class="site-header__features-item"> 
+            <div class="site-header__img"><img src="./img/harmful-habits.svg" alt="harmful habits"/></div>
+            <h5 class="site-header__desc">Вредные привычки</h5>
+          </li>
         </ul>
       </div>
     </header>
@@ -120,5 +132,63 @@
         </div>
       </article>
     </section>
+    <section class="reviews">
+      <h4 class="reviews__title">Мне доверяют</h4>
+      <h5 class="reviews__subtitle">Отзывы благодарных клиентов, которым я помог своевременно выявить проблемы и определить способы их решения.</h5>
+      <div class="reviews__board">
+        <ul class="reviews__list">
+          <li class="reviews__item"><a class="reviews__link" href="feedback.html">
+              <div class="reviews__feedback"><img src="./img/feedback.svg" alt="feedback"/></div></a>
+            <div class="reviews__avatar"><img src="./img/Ludmila.jpg" alt="person 1"/></div>
+            <div class="reviews__content">
+              <h4 class="reviews__author-name">Людмила Малкис</h4>
+              <quote class="reviews__quote">Я обратилась к Богдану в очень сложный период жизни: кризисы, как известно, случаются не только в экономике. У меня была просто каша в голове: кто я, зачем, куда иду? И полное отсутствие сил что-то менять. Пожалуй, хватило меня в тот момент только на то, чтобы написать короткий 'запрос' на электронную почту Богдана. А уже через пару дней мы встретились. И началась череда удивительных событий, 'случайностей', мгновенного и неожиданного достижения одних целей (из серии 'невозможных') и невозможности достижения других,  как казалось, очень простых. Мне, человеку искушенному и прокаченному в плане развития собственного потенциала, едва хватало сил удержаться в том режиме и графике, который диктовал Богдан. Но оно того стоило - я никогда еще не была такой эффективной, хочется написать 'быстро и осмысленно действующей', спокойной и…</quote>
+            </div>
+          </li>
+          <li class="reviews__item"><a class="reviews__link" href="feedbackg.html">
+              <div class="reviews__feedback"><img src="./img/feedback.svg" alt="feedback"/></div></a>
+            <div class="reviews__avatar"><img src="./img/Olga.jpg" alt="person 2"/></div>
+            <div class="reviews__content">
+              <h4 class="reviews__author-name">Ольга Трейвас</h4>
+              <h5 class="reviews__author-profession">со основатель архитектурного бюро FORM                            </h5>
+              <quote class="reviews__quote">Абсолютно точно работа с Богданом продвинула мои профессиональные навыки и позволила развить внутренние состояния. Ведь лишь, выходя за рамки комфорта и работая со смежными дисциплинами мы можем расчитывать внутренний прогресс. Разработанная Богданом специально для меня программа превратила непростой путь обучения в интересное игровое приключение. Со основатель архитектурного бюро FORM, лауреата международных конкурсов и автора таких знаковых проектов как Образовательный центр в парке Горького и Музей современного искусства GARAGE.</quote>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="form">
+      <div class="form__title"><img src="./img/title-form.svg" alt="personal coacher"/></div>
+      <h4 class="form__subtitle">В любой момент Вы можете получать мою квалифицированную помощь. Выберите наиболее удобный способ для связи и получите первую консультацию БЕСПЛАТНО</h4>
+      <form class="form__form">
+        <div class="form__group">
+          <input class="form__input" placeholder="Ваше e-mail"/>
+        </div>
+        <div class="form__group">
+          <textarea class="form__textarea" placeholder="Текс письма"></textarea>
+        </div>
+        <div class="form__group">
+          <input class="form__button" type="submit" value="Отправить"/>
+        </div>
+      </form>
+      <footer class="footer">
+        <div class="info">
+          <ul class="info__list info__list--footer">
+            <li class="info__item info__item--footer"><span class="info__text info__text--footer">Email:<span class="info__text info__text--light info__text--footer">bogdan.yankevich@gmail.com</span></span></li>
+            <li class="info__item info__item--footer"><span class="info__text info__text--footer">Телефон:<span class="info__text info__text--light info__text--footer">+7 (916)-331-78-42</span></span></li>
+          </ul>
+        </div>
+        <nav class="main-menu--footer">
+          <ul class="main-menu__list--footer">
+            <li class="main-menu__item"><a class="main-menu__link--footer" href="index.html">Главная</a></li>
+            <li class="main-menu__item"><a class="main-menu__link--footer" href="index.html">Услуги</a></li>
+            <li class="main-menu__item"><a class="main-menu__link--footer" href="index.html">Обо мне</a></li>
+            <li class="main-menu__item"><a class="main-menu__link--footer" href="index.html">Отзывы</a></li>
+            <li class="main-menu__item"><a class="main-menu__link--footer" href="index.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </section>
   </body>
+  <script src="script.js"></script>
 </html>

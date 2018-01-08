@@ -1,3 +1,79 @@
 .main-menu {
-	display: none;
+	    // positioning
+		position: fixed;
+		bottom: 0;
+		left: -100%;
+		top: 0;
+		z-index: 4;
+	
+		// box model
+		width: 100%;
+		padding: 30px;
+	
+		// visual
+		background-color: #5f341f;
+		transition: all 0.3s ease-out;
+		visibility: hidden;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+	&--footer {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__list {
+		list-style: none;
+		padding-left: 0;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+
+		&--footer {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+	&__item {
+		padding-right: 5px;
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 50px;
+
+		&--footer {
+
+		}
+	}
+
+	&__link {
+		text-decoration: none;
+		text-shadow: 0 2px 6px rgba(0, 0, 0, .15);
+		font-family: $Roboto;
+		color: #fff;
+		text-transform: uppercase;
+
+		&--footer {
+			color: $text;
+			font-size: 1rem;
+			font-weight: 500;
+		}
+	}
+	&--shown {
+        // positioning
+        left: 0;
+
+        // visual
+        // opacity: 1;
+        visibility: visible;
+
+        @include atDesktop {
+            // positioning
+            left: 250px;
+        }
+    }
 }
