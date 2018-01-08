@@ -25,10 +25,10 @@ html(lang="en")
             nav.main-menu
                 ul.main-menu__list
                     li.main-menu__item: a.main-menu__link(href="index.html") Главная
-                    li.main-menu__item: a.main-menu__link(href="index.html#advantages") Услуги
-                    li.main-menu__item: a.main-menu__link(href="index.html#about") Обо мне
-                    li.main-menu__item: a.main-menu__link(href="index.html#reviews") Отзывы
-                    li.main-menu__item: a.main-menu__link(href="index.html#contacts") Контакты
+                    li.main-menu__item: a.main-menu__link(href="#advantages") Услуги
+                    li.main-menu__item: a.main-menu__link(href="#about") Обо мне
+                    li.main-menu__item: a.main-menu__link(href="#reviews") Отзывы
+                    li.main-menu__item: a.main-menu__link(href="#contacts") Контакты
             article.promo
                 ul.promo__list
                     li.promo__item: p.promo__text “Здравствуйте, я хочу изменить свою жизнь” - так обычно начинаются письма которые я получаю.
@@ -57,7 +57,7 @@ html(lang="en")
                             img(src="./img/harmful-habits.svg" alt="harmful habits")
                         h5.site-header__desc Вредные привычки
 
-        section.advantages
+        section.advantages#advantages
             h2.advantages__main-title я помогу решить вам такие&nbsp;проблемы:
             ul.advantages__list
                 li.advantages__item
@@ -68,32 +68,32 @@ html(lang="en")
                 li.advantages__item
                     .advantages__img: img(src="./img/targets.svg" alt="img")                
                     .advantages__content
-                        h4.advantages__title Сложности на работе
-                        p.advantages__text Все валится из рук. Не могу сконцентрироваться на работе. Замучили частые конфликты.
+                        h4.advantages__title Постановка жизненных целей
+                        p.advantages__text Каждый понедельник я планирую важные дела, но не могу доводить их до конца.
                     
                 li.advantages__item
                     .advantages__img: img(src="./img/habits.svg" alt="img")                
                     .advantages__content
-                        h4.advantages__title Сложности на работе
-                        p.advantages__text Все валится из рук. Не могу сконцентрироваться на работе. Замучили частые конфликты.
+                        h4.advantages__title Вредные привычки
+                        p.advantages__text Никотин и алкоголь превратили мою жизнь в рабство. Хочу быть свободным от зависимости.
                     
                 li.advantages__item
                     .advantages__img: img(src="./img/fin-problems.svg" alt="img")                
                     .advantages__content
-                        h4.advantages__title Сложности на работе
-                        p.advantages__text Все валится из рук. Не могу сконцентрироваться на работе. Замучили частые конфликты.
+                        h4.advantages__title Финансовые трудности
+                        p.advantages__text У меня нет денег, а когда они появляются, то я не могу контролировать их расход.
                 li.advantages__item
                     .advantages__img: img(src="./img/indifference.svg" alt="img")                
                     .advantages__content
-                        h4.advantages__title Сложности на работе
-                        p.advantages__text Все валится из рук. Не могу сконцентрироваться на работе. Замучили частые конфликты.
+                        h4.advantages__title Равнодушие к жизни
+                        p.advantages__text У меня упадок сил. Мне все надоело. Я не знаю чего хочу в этой жизни.
                 li.advantages__item
                     .advantages__img: img(src="./img/fatigue.svg" alt="img")                
                     .advantages__content
-                        h4.advantages__title Сложности на работе
-                        p.advantages__text Все валится из рук. Не могу сконцентрироваться на работе. Замучили частые конфликты.
+                        h4.advantages__title Эмоциональная усталость
+                        p.advantages__text Злость, страх, безразличие, мешают мне наладить отношения в семье и на работе.
 
-        section.about
+        section.about#about
             article.about__board
                 .about__img: img(src="./img/me.jpg" alt="me")
                 .about__content
@@ -105,7 +105,7 @@ html(lang="en")
                         li.about__item: p.about__text Более 80% моих клиентов показывают отличные результаты. Они реализуют поставленные задачи и цели, не только в профессиональных, а и в различных сферах своей деятельности.
                         li.about__item: p.about__text На мой взгляд, развитие не определяется только одним направлением, это процесс затрагивающий все сферы жизни, начиная от психологического и физического здоровья, заканчивая отношениями с окружающим миром.
         
-        section.reviews
+        section.reviews#reviews
             h4.reviews__title Мне доверяют
             h5.reviews__subtitle Отзывы благодарных клиентов, которым я помог своевременно выявить проблемы и определить способы их решения.
             .reviews__board
@@ -131,7 +131,7 @@ html(lang="en")
                             h5.reviews__author-profession со основатель архитектурного бюро FORM                            
                             quote.reviews__quote Абсолютно точно работа с Богданом продвинула мои профессиональные навыки и позволила развить внутренние состояния. Ведь лишь, выходя за рамки комфорта и работая со смежными дисциплинами мы можем расчитывать внутренний прогресс. Разработанная Богданом специально для меня программа превратила непростой путь обучения в интересное игровое приключение. Со основатель архитектурного бюро FORM, лауреата международных конкурсов и автора таких знаковых проектов как Образовательный центр в парке Горького и Музей современного искусства GARAGE.
 
-        section.form
+        section.form#contacts
             .form__title
                 img(src="./img/title-form.svg" alt="personal coacher")
             h4.form__subtitle В любой момент Вы можете получать мою квалифицированную помощь. Выберите наиболее удобный способ для связи и получите первую консультацию БЕСПЛАТНО
@@ -156,10 +156,10 @@ html(lang="en")
                 nav.main-menu--footer
                     ul.main-menu__list--footer
                         li.main-menu__item.main-menu__item--footer: a.main-menu__link--footer(href="index.html") Главная
-                        li.main-menu__item.main-menu__item--footer: a.main-menu__link--footer(href="index.html") Услуги
-                        li.main-menu__item.main-menu__item--footer: a.main-menu__link--footer(href="index.html") Обо мне
-                        li.main-menu__item.main-menu__item--footer: a.main-menu__link--footer(href="index.html") Отзывы
-                        li.main-menu__item.main-menu__item--footer: a.main-menu__link--footer(href="index.html") Контакты
+                        li.main-menu__item.main-menu__item--footer: a.main-menu__link--footer(href="#advantages") Услуги
+                        li.main-menu__item.main-menu__item--footer: a.main-menu__link--footer(href="#about") Обо мне
+                        li.main-menu__item.main-menu__item--footer: a.main-menu__link--footer(href="#reviews") Отзывы
+                        li.main-menu__item.main-menu__item--footer: a.main-menu__link--footer(href="#contacts") Контакты
 
     script(src="script.js")
 

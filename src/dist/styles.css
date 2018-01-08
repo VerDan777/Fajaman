@@ -58,6 +58,9 @@ a:hover {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-top: 0;
   margin-bottom: 25px;
   -ms-flex-wrap: wrap;
@@ -80,7 +83,7 @@ a:hover {
 }
 
 .info {
-  padding-top: 25px;
+  padding: 50px 0;
 }
 
 .info__list {
@@ -96,17 +99,18 @@ a:hover {
 }
 
 .info__list--footer {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.info__item--footer {
+  text-align: center;
+  display: block;
 }
 
 .info__text {
-  color: #a3683f;
+  color: #f3e2d4;
   font-size: 15px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -122,7 +126,13 @@ a:hover {
 .info__text--footer {
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   color: #4f4943;
-  text-align: left;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .main-menu {
@@ -221,6 +231,12 @@ a:hover {
   font-weight: 500;
   text-decoration: none;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  -webkit-transition: 0.3s ease-in-out all;
+  transition: 0.3s ease-in-out all;
+}
+
+.main-menu__link--footer:hover {
+  color: #f9b030;
 }
 
 .main-menu--shown {
@@ -376,6 +392,7 @@ a:hover {
   font-size: 0.875em;
   color: #4f4a43;
   font-family: "Roboto", sans-serif;
+  line-height: 25px;
 }
 
 .advantages__content {

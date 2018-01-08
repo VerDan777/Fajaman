@@ -1,6 +1,7 @@
 .info {
 	// display: flex;
-	padding-top: 25px;
+	padding: 50px 0;
+
 
 	&__list {
 		display: flex;
@@ -11,14 +12,22 @@
 		
 
 		&--footer {
-			flex-direction: column;
-			// justify-content: center;
-			align-items: center;
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+		}
+	}
+
+	&__item {
+
+		&--footer {
+			text-align: center;
+			display: block;
 		}
 	}
 
 	&__text {
-		color: #a3683f;
+		color: #f3e2d4;
 		font-size: 15px;
 		font-family:  $Roboto;
 		font-weight: 500;
@@ -33,7 +42,9 @@
 		&--footer {
 			text-shadow: 0 2px 6px rgba(0, 0, 0, .15);
 			color: $text;
-			text-align: left;
+			text-align: center;
+			display: flex;
+			justify-content: center;
 		}
 	}
 }
