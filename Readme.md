@@ -1,1 +1,0 @@
-# ReDesign for Fajaman.ru
