@@ -62,7 +62,6 @@ a:hover {
   -ms-flex-align: center;
   align-items: center;
   margin-top: 0;
-  margin-bottom: 25px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding-left: 0;
@@ -324,10 +323,11 @@ a:hover {
 }
 
 .promo {
-  padding-bottom: 25px;
+  padding-bottom: 50px;
 }
 
 .promo__list {
+  margin: 0;
   list-style: none;
   padding-left: 0;
 }
@@ -336,7 +336,8 @@ a:hover {
   color: #f3e2d4;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
+  text-align: left;
   margin-top: 0;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
   margin-bottom: 25px;
@@ -358,6 +359,7 @@ a:hover {
   font-weight: 700;
   text-align: center;
   line-height: 28px;
+  margin: 0;
 }
 
 .advantages__list {
@@ -490,7 +492,7 @@ a:hover {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   margin: 0 auto;
-  padding-top: 50px;
+  padding: 50px 0;
   text-align: center;
 }
 
@@ -537,7 +539,7 @@ a:hover {
   font-family: "Lora", sans-serif;
   font-weight: 700;
   color: #4f4943;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 0;
   margin-top: 0;
   padding-bottom: 25px;
@@ -576,7 +578,7 @@ a:hover {
   width: 240px;
   margin: 0 auto;
   margin-top: 50px;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
   display: block;
 }
 
@@ -608,7 +610,7 @@ a:hover {
   border: 1px solid #fff;
   -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   padding: 20px;
   width: 100%;
   outline: none;
