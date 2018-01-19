@@ -1,15 +1,20 @@
 .promo {
-	padding-bottom: 25px;
+	padding-bottom: 50px;
+
 	&__list {
+		// box model
+		margin: 0;
 		list-style: none;
 		padding-left: 0;
+
 	}
 
 	&__text {
 		color: rgb(243, 226, 212);
 		font-family: $Roboto;
 		font-weight: 300;
-		font-size: 14px;
+		font-size: 16px;
+		text-align: left;
 		margin-top: 0;
 		text-shadow: 0 2px 5px rgba(0, 0, 0, .35);
 		margin-bottom: 25px;
