@@ -14,12 +14,12 @@
 
 		@include atTabletsLandscape {
 			flex-direction: row;
+			align-items: flex-start;
 		}
 	}
 
 	&__img {
 		max-width: 340px;
-		height: 500px;
 		display: inline-block;
 		@include atTabletsLandscape {
 			

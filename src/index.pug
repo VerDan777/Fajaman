@@ -10,30 +10,33 @@ html(lang="en")
 
 
     body
-        header.site-header
-            .site-header__title: img(src="./img/title.svg")
-            .menu-icon: .menu-icon__middle
-            .info
-                ul.info__list
-                    li.info__item
-                        span.info__text Email:
-                             span.info__text.info__text--light bogdan.yankevich@gmail.com
-                    li.info__item
-                            span.info__text Телефон:
-                                span.info__text.info__text--light +7 (916)-331-78-42
+        header.site-header: .wrapper
+            .wrapper--flex
+                .site-header__title: img(src="./img/title.svg")
+                .menu-icon: .menu-icon__middle
+                .site-header__container
+                    .info
+                        ul.info__list
+                            li.info__item
+                                span.info__text Email:
+                                    span.info__text.info__text--light  bogdan.yankevich@gmail.com
+                            li.info__item
+                                    span.info__text Телефон:
+                                        span.info__text.info__text--light  +7 (916)-331-78-42
+                    nav.main-menu
+                        ul.main-menu__list
+                            li.main-menu__item: a.main-menu__link(href="#") Главная
+                            li.main-menu__item: a.main-menu__link(href="#advantages") Услуги
+                            li.main-menu__item: a.main-menu__link(href="#about") Обо мне
+                            li.main-menu__item: a.main-menu__link(href="#reviews") Отзывы
+                            li.main-menu__item: a.main-menu__link(href="#contacts") Контакты
     
-            nav.main-menu
-                ul.main-menu__list
-                    li.main-menu__item: a.main-menu__link(href="#") Главная
-                    li.main-menu__item: a.main-menu__link(href="#advantages") Услуги
-                    li.main-menu__item: a.main-menu__link(href="#about") Обо мне
-                    li.main-menu__item: a.main-menu__link(href="#reviews") Отзывы
-                    li.main-menu__item: a.main-menu__link(href="#contacts") Контакты
             article.promo
                 ul.promo__list
                     li.promo__item: p.promo__text “Здравствуйте, я хочу изменить свою жизнь” - так обычно начинаются письма которые я получаю.
                     li.promo__item: p.promo__text  По статистике большинство людей сталкиваясь в своей жизни с трудностями, хотят решать их самостоятельно, но порой они даже и не знают, как правильно планировать свою жизнь, как самостоятельно реализовывать поставленные цели, как налаживать межличностные отношения и как контролировать свои эмоции.
                     li.promo__item: p.promo__text  Меня зовут Богдан и если Вы хотите научиться самостоятельно решать свои проблемы, то тогда пришло время нам с вами познакомиться.
+                    hr.promo__hr
 
             .site-header__features
                 ul.site-header__features-list
@@ -57,7 +60,12 @@ html(lang="en")
                             img(src="./img/harmful-habits.svg" alt="harmful habits")
                         h5.site-header__desc Вредные привычки
 
-        section.advantages#advantages
+            .site-header__mouse
+                 svg(x="0px" y="0px" width="30px" height="53px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 53" fill="#f3e2d4")
+                    path(class="cls-1" d="M15,0A15,15,0,0,0,0,15V38a15,15,0,0,0,30,0V15A15,15,0,0,0,15,0ZM28.21,38A13.21,13.21,0,0,1,1.79,38V15a13.21,13.21,0,0,1,26.41,0V38Z")
+                    path(class="cls-1" d="M15.13,18.61H14.87a1.27,1.27,0,0,1-1.28-1.28V13a1.28,1.28,0,0,1,1.28-1.28h0.26A1.27,1.27,0,0,1,16.41,13v4.3A1.29,1.29,0,0,1,15.13,18.61Zm4.46,18.18-4.59,4-4.64-4a0.89,0.89,0,1,1,1.15-1.36l2.56,2.2V29.29a0.9,0.9,0,0,1,1.79,0v8.35l2.56-2.2a0.89,0.89,0,1,1,1.15,1.36h0Z")
+
+        section.advantages#advantages: .wrapper
             h2.advantages__main-title я помогу решить вам такие&nbsp;проблемы:
             ul.advantages__list
                 li.advantages__item
@@ -93,7 +101,7 @@ html(lang="en")
                         h4.advantages__title Эмоциональная усталость
                         p.advantages__text Злость, страх, безразличие, мешают мне наладить отношения в семье и на работе.
 
-        section.about#about
+        section.about#about: .wrapper
             article.about__board
                 .about__img: img(src="./img/me.jpg" alt="me")
                 .about__content
@@ -105,7 +113,7 @@ html(lang="en")
                         li.about__item: p.about__text Более 80% моих клиентов показывают отличные результаты. Они реализуют поставленные задачи и цели, не только в профессиональных, а и в различных сферах своей деятельности.
                         li.about__item: p.about__text На мой взгляд, развитие не определяется только одним направлением, это процесс затрагивающий все сферы жизни, начиная от психологического и физического здоровья, заканчивая отношениями с окружающим миром.
         
-        section.reviews#reviews
+        section.reviews#reviews: .wrapper
             h4.reviews__title Мне доверяют
             h5.reviews__subtitle Отзывы благодарных клиентов, которым я помог своевременно выявить проблемы и определить способы их решения.
             .reviews__board
@@ -131,7 +139,7 @@ html(lang="en")
                             h5.reviews__author-profession со основатель архитектурного бюро FORM
                             quote.reviews__quote Абсолютно точно работа с Богданом продвинула мои профессиональные навыки и позволила развить внутренние состояния. Ведь лишь, выходя за рамки комфорта и работая со смежными дисциплинами мы можем расчитывать внутренний прогресс. Разработанная Богданом специально для меня программа превратила непростой путь обучения в интересное игровое приключение. Со основатель архитектурного бюро FORM, лауреата международных конкурсов и автора таких знаковых проектов как Образовательный центр в парке Горького и Музей современного искусства GARAGE.
 
-        section.form#contacts
+        section.form#contacts: .wrapper
             .form__title
                 img(src="./img/title-form.svg" alt="personal coacher")
             h4.form__subtitle В любой момент Вы можете получать мою квалифицированную помощь. Выберите наиболее удобный способ для связи и получите первую консультацию БЕСПЛАТНО
@@ -158,22 +166,23 @@ html(lang="en")
                             .steps__text Закажите звонок. Укажите номер вашего телефона и я вам перезвоню.
 
 
-            footer.footer
-                .info
-                    ul.info__list.info__list--footer
-                        li.info__item.info__item--footer
-                            span.info__text.info__text--footer Email:
-                                span.info__text.info__text--light.info__text--footer bogdan.yankevich@gmail.com
-                        li.info__item.info__item--footer
-                                span.info__text.info__text--footer Телефон:
-                                    span.info__text.info__text--light.info__text--footer +7 (916)-331-78-42
-        
-                nav.main-menu--footer
-                    ul.main-menu__list--footer
-                        li.main-menu__item.main-menu__item--footer: a.main-menu__link--footer(href="index.html") Главная
-                        li.main-menu__item.main-menu__item--footer: a.main-menu__link--footer(href="#advantages") Услуги
-                        li.main-menu__item.main-menu__item--footer: a.main-menu__link--footer(href="#about") Обо мне
-                        li.main-menu__item.main-menu__item--footer: a.main-menu__link--footer(href="#reviews") Отзывы
-                        li.main-menu__item.main-menu__item--footer: a.main-menu__link--footer(href="#contacts") Контакты
+            footer.footer: .wrapper
+                .wrapper--flex
+                    .info
+                        ul.info__list.info__list--footer
+                            li.info__item.info__item--footer
+                                span.info__text.info__text--footer Email:
+                                    span.info__text.info__text--light.info__text--footer bogdan.yankevich@gmail.com
+                            li.info__item.info__item--footer
+                                    span.info__text.info__text--footer Телефон:
+                                        span.info__text.info__text--light.info__text--footer +7 (916)-331-78-42
+            
+                    nav.main-menu--footer
+                        ul.main-menu__list--footer
+                            li.main-menu__item.main-menu__item--footer: a.main-menu__link--footer(href="index.html") Главная
+                            li.main-menu__item.main-menu__item--footer: a.main-menu__link--footer(href="#advantages") Услуги
+                            li.main-menu__item.main-menu__item--footer: a.main-menu__link--footer(href="#about") Обо мне
+                            li.main-menu__item.main-menu__item--footer: a.main-menu__link--footer(href="#reviews") Отзывы
+                            li.main-menu__item.main-menu__item--footer: a.main-menu__link--footer(href="#contacts") Контакты
 
     script(src="script.js")

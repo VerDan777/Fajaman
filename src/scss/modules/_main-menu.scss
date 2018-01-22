@@ -19,6 +19,15 @@
 		align-items: center;
 		justify-content: center;
 
+		@include atDesktop {
+			position: static;
+			width: auto;
+			flex-direction: row;
+			visibility: visible;
+			background: none;
+			padding: 0
+		}
+
 	&--footer {
 		display: flex;
 		justify-content: center;
@@ -32,6 +41,11 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-between;
+
+		@include atDesktop {
+			flex-direction: row;
+			margin-top: 0;
+		}
 
 		&--footer {
 			list-style: none;
@@ -51,6 +65,14 @@
 		justify-content: space-between;
 		padding-bottom: 50px;
 
+		@include atDesktop {
+			padding-right: 48px;
+
+			&:last-child {
+				padding-right: 0;
+			}
+		}
+
 		&--footer {
 			padding-right: 5px;
 			padding-bottom: 0;
@@ -69,6 +91,17 @@
 		font-family: $Roboto;
 		color: #fff;
 		text-transform: uppercase;
+
+		@include atDesktop {
+			color: #a3683f;
+			box-shadow: none;
+			text-transform: lowercase;
+			transition: 0.3s ease-in-out all;
+
+			&:hover {
+				color: rgb(243, 226, 212);
+			}
+		}
 
 		&--footer {
 			color: $text;

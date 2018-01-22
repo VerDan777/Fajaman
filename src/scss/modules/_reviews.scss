@@ -99,6 +99,10 @@
             font-size: 9px;
             line-height: 0;
         }
+
+        @include atDesktop {
+            font-size: 12px;
+        }
     }
 
     &__feedback {

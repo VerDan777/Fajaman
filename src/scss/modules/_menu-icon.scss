@@ -20,7 +20,6 @@
         top: 15px;
 
         // visual
-        background-color: #fff;
         box-shadow: 0 0 0 2px rgba(#fff, 0.5);
     }
 
@@ -107,7 +106,7 @@
 
         @include atTabletsLandscape {
             // visual
-            background-color: #fff;
+            // background-color: #fff;
         }
 
         &::before {
