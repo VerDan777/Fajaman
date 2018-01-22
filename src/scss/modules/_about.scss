@@ -11,13 +11,19 @@
 		flex-direction: column;
 		align-items: center;
 		box-shadow: 0 0 25px rgba(0, 0, 0, .15);
+
+		@include atTabletsLandscape {
+			flex-direction: row;
+		}
 	}
 
 	&__img {
 		max-width: 340px;
 		height: 500px;
 		display: inline-block;
-		box-shadow: 
+		@include atTabletsLandscape {
+			
+		}
 
         img {
 			height: 100%;
@@ -37,7 +43,12 @@
         font-family: $Lora;
         color: $text;
         font-weight: 700;
-        text-align: center;
+		text-align: center;
+
+		@include atTabletsLandscape {
+			padding: 20px;
+			text-align: left;
+		}
     }
     &__profession {
         text-align: center;
@@ -45,7 +56,12 @@
         font-style: italic;
         font-family: $Lora;
         font-size: 0.83rem;
-        color: #797979;
+		color: #797979;
+		
+		@include atTabletsLandscape {
+			padding: 0 20px;
+			text-align: left;
+		}
     }
     
     &__list {

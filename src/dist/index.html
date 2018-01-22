@@ -22,7 +22,7 @@
       </div>
       <nav class="main-menu">
         <ul class="main-menu__list">
-          <li class="main-menu__item"><a class="main-menu__link" href="index.html">Главная</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#">Главная</a></li>
           <li class="main-menu__item"><a class="main-menu__link" href="#advantages">Услуги</a></li>
           <li class="main-menu__item"><a class="main-menu__link" href="#about">Обо мне</a></li>
           <li class="main-menu__item"><a class="main-menu__link" href="#reviews">Отзывы</a></li>
@@ -150,7 +150,7 @@
             <div class="reviews__avatar"><img src="./img/Olga.jpg" alt="person 2"/></div>
             <div class="reviews__content">
               <h4 class="reviews__author-name">Ольга Трейвас</h4>
-              <h5 class="reviews__author-profession">со основатель архитектурного бюро FORM                            </h5>
+              <h5 class="reviews__author-profession">со основатель архитектурного бюро FORM</h5>
               <quote class="reviews__quote">Абсолютно точно работа с Богданом продвинула мои профессиональные навыки и позволила развить внутренние состояния. Ведь лишь, выходя за рамки комфорта и работая со смежными дисциплинами мы можем расчитывать внутренний прогресс. Разработанная Богданом специально для меня программа превратила непростой путь обучения в интересное игровое приключение. Со основатель архитектурного бюро FORM, лауреата международных конкурсов и автора таких знаковых проектов как Образовательный центр в парке Горького и Музей современного искусства GARAGE.</quote>
             </div>
           </li>
@@ -160,17 +160,34 @@
     <section class="form" id="contacts">
       <div class="form__title"><img src="./img/title-form.svg" alt="personal coacher"/></div>
       <h4 class="form__subtitle">В любой момент Вы можете получать мою квалифицированную помощь. Выберите наиболее удобный способ для связи и получите первую консультацию БЕСПЛАТНО</h4>
-      <form class="form__form">
-        <div class="form__group">
-          <input class="form__input" placeholder="Ваше e-mail"/>
+      <div class="form__container">
+        <form class="form__form">
+          <div class="form__group">
+            <input class="form__input" placeholder="Ваше e-mail"/>
+          </div>
+          <div class="form__group">
+            <textarea class="form__textarea" placeholder="Текс письма"></textarea>
+          </div>
+          <div class="form__group">
+            <input class="form__button" type="submit" value="Отправить"/>
+          </div>
+        </form>
+        <div class="steps">
+          <ul class="steps__list">
+            <li class="steps__item">
+              <div class="steps__img"><img src="./img/step1.svg" alt="first step"/></div>
+              <p class="steps__text">В двух словах опишите свою проблему в контактной форме.</p>
+            </li>
+            <li class="steps__item">
+              <div class="steps__img"><img src="./img/step2.svg" alt="second step"/></div>
+              <p class="steps__text">Позвоните мне и мы договоримся о времени и месте встречи.</p>
+            </li>
+            <li class="steps__item"><img src="./img/step3.svg" alt="third step"/>
+              <div class="steps__text">Закажите звонок. Укажите номер вашего телефона и я вам перезвоню.</div>
+            </li>
+          </ul>
         </div>
-        <div class="form__group">
-          <textarea class="form__textarea" placeholder="Текс письма"></textarea>
-        </div>
-        <div class="form__group">
-          <input class="form__button" type="submit" value="Отправить"/>
-        </div>
-      </form>
+      </div>
       <footer class="footer">
         <div class="info">
           <ul class="info__list info__list--footer">

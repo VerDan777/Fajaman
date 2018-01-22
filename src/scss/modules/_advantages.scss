@@ -14,11 +14,17 @@
 		text-align: center;
 		line-height: 28px;
 		margin: 0;
+
+		@include atTabletsLandscape {
+			font-size: 2rem;
+		}
 	}
 
 	&__list {
 		list-style: none;
 		padding-left: 0;
+		flex-wrap: wrap;
+		display: flex;
 	}
 
 	&__item {
@@ -26,6 +32,12 @@
 		flex-direction: column;
 		align-items: center;
 		padding-bottom: 50px;
+
+		@include atTabletsLandscape {
+			flex-direction: row;
+			width: 48%;
+			align-items: flex-start;
+		}
 	}
 
 	&__title {
@@ -35,6 +47,12 @@
 		font-weight: 700;
 		text-transform: uppercase;
 		text-transform: 2px;
+		
+		@include atTabletsLandscape {
+			font-size: 0.875rem;
+			font-weight: 700;
+			margin: 0;
+		}
 	}
 
 	&__text {
@@ -42,15 +60,30 @@
         color: #4f4a43;
 		font-family: $Roboto;
 		line-height: 25px;
+
+		@include atTabletsLandscape {
+			font-size: 0.5rem;
+			line-height: 10px;
+		}
 	}
 
 	&__content {
 		text-align: center;
+
+		@include atTabletsLandscape {
+			text-align: left;
+			padding-left: 20px;
+		}
 	}
     
 	&__img {
 		width: 90px;
 		height: 90px;
+
+		@include atTabletsLandscape {
+			width: 80px;
+			height: 72px;
+		}
 
 		img {
 			width: 100%;

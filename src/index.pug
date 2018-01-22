@@ -135,13 +135,28 @@ html(lang="en")
             .form__title
                 img(src="./img/title-form.svg" alt="personal coacher")
             h4.form__subtitle В любой момент Вы можете получать мою квалифицированную помощь. Выберите наиболее удобный способ для связи и получите первую консультацию БЕСПЛАТНО
-            form.form__form
-                .form__group
-                    input.form__input(placeholder="Ваше e-mail")
-                .form__group
-                    textarea.form__textarea(placeholder="Текс письма")
-                .form__group
-                    input.form__button(type="submit" value="Отправить")
+            .form__container
+                form.form__form
+                    .form__group
+                        input.form__input(placeholder="Ваше e-mail")
+                    .form__group
+                        textarea.form__textarea(placeholder="Текс письма")
+                    .form__group
+                        input.form__button(type="submit" value="Отправить")
+                .steps
+                    ul.steps__list
+                        li.steps__item
+                            .steps__img
+                                img(src="./img/step1.svg" alt="first step")
+                            p.steps__text В двух словах опишите свою проблему в контактной форме.
+                        li.steps__item
+                            .steps__img
+                                img(src="./img/step2.svg" alt="second step")
+                            p.steps__text Позвоните мне и мы договоримся о времени и месте встречи.
+                        li.steps__item
+                            img(src="./img/step3.svg" alt="third step")
+                            .steps__text Закажите звонок. Укажите номер вашего телефона и я вам перезвоню.
+
 
             footer.footer
                 .info
@@ -162,8 +177,3 @@ html(lang="en")
                         li.main-menu__item.main-menu__item--footer: a.main-menu__link--footer(href="#contacts") Контакты
 
     script(src="script.js")
-
-            
-            
-            
-                

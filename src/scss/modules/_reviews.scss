@@ -32,8 +32,16 @@
     &__avatar {
         max-width: 100%;
 
+        @include atTabletsLandscape {
+            height: 240px;
+        }
+
         img {
             width: 100%;
+
+            @include atTabletsLandscape {
+                width: 240px;
+            }
         }
     }
 
@@ -49,6 +57,11 @@
         background-color: #fff;
         margin-bottom: 75px;
         box-shadow: 0 0 25px rgba(0, 0, 0, .15);
+
+        @include atTabletsLandscape {
+            height: 240px;
+            display: flex;
+        }
         
     }
 
@@ -61,6 +74,11 @@
         margin-bottom: 0;
         margin-top: 0;
         padding-bottom: 25px;
+
+        @include atTabletsLandscape {
+            text-align: left;
+            padding-bottom: 10px;
+        }
     }
     
     &__author-profession {
@@ -75,6 +93,12 @@
         color: $text;
         font-size: 1rem;
         line-height: 25px;
+
+        @include atTabletsLandscape {
+            text-align: left;
+            font-size: 9px;
+            line-height: 0;
+        }
     }
 
     &__feedback {

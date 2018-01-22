@@ -80,6 +80,14 @@
 			&:hover {
 				color: #f9b030;
 			}
+
+			@include atTabletsLandscape {
+				padding-right: 30px;
+
+				&::last-child {
+					padding-right: 0;
+				}
+			}
 		}
 	}
 	&--shown {

@@ -1,0 +1,36 @@
+.steps {
+    display: none;
+
+    @include atTabletsLandscape {
+        display: block;
+    }
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 46px;
+    }
+
+    &__img {
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__text {
+        font-family: $Roboto;
+        font-style: italic;
+        font-size: 14px;
+        line-height: 20px;
+        color: #4f4a43;
+        text-shadow: 0 2px 6px rgba(0, 0, 0, .15);
+        width: 250px;
+        padding-left: 10px;
+    }
+}

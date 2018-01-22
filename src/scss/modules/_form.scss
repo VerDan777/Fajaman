@@ -5,6 +5,14 @@
     background-size: cover;
     height: 100%;
     padding: 15px;
+
+    &__container {
+
+        @include atTabletsLandscape {
+
+            display: flex;
+        }
+    }
     
     &__title {
         height: 66px;
@@ -31,6 +39,9 @@
 
     &__form {
         
+        @include atTabletsLandscape {
+            width: 500px;
+        }
     }
 
     &__input {
@@ -50,6 +61,10 @@
         width: 100%;
         outline: none;
         resize: none;
+        height: 250px;
+        @include atTabletsLandscape {
+            height: 250px;
+        }
     }
 
     &__button {

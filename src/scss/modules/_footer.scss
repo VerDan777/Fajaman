@@ -1,0 +1,7 @@
+.footer {
+    @include atTabletsLandscape {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
