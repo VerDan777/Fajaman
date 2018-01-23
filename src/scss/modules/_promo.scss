@@ -2,6 +2,10 @@
 	padding-top: 75px;
 	padding-bottom: 15px;
 
+	@include atDesktop {
+		height: 100vh;
+	}
+
 	&__list {
 		// box model
 		margin: 0;

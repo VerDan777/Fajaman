@@ -9,11 +9,16 @@
 		display: flex;
 		list-style: none;
 		flex-wrap: wrap;
+		flex-direction: column;
 		justify-content: space-around;
 		padding-left: 0;
 		
+		// @include atTabletsLandscape {
+		// 	flex-direction: row;
+		// }
 		@include atDesktop {
 			margin-top: 0;
+			flex-direction: row;
 		}
 
 		&--footer {
@@ -27,6 +32,8 @@
 
 		@include atDesktop {
 			padding-right: 50px;
+			display: flex;
+
 			&:last-child {
 				padding-right: 0;
 			}
@@ -43,7 +50,7 @@
 		font-size: 15px;
 		font-family:  $Roboto;
 		font-weight: 500;
-		display: block;
+		display: inline;
 		line-height: 30px;
 		letter-spacing: 3;
 
@@ -54,6 +61,8 @@
 
 		&--light {
 			font-weight: 300;
+			display: inline;
+			text-decoration: none;
 
 			@include atDesktop {
 				padding-left: 10px;

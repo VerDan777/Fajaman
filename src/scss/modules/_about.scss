@@ -21,8 +21,9 @@
 	&__img {
 		max-width: 340px;
 		display: inline-block;
-		@include atTabletsLandscape {
-			
+		@include atDesktop {
+			height: 481px;
+		
 		}
 
         img {

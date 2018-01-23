@@ -135,6 +135,10 @@ a:hover {
   list-style: none;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-pack: distribute;
   justify-content: space-around;
   padding-left: 0;
@@ -156,13 +160,15 @@ a:hover {
   font-size: 15px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  display: block;
+  display: inline;
   line-height: 30px;
   letter-spacing: 3;
 }
 
 .info__text--light {
   font-weight: 300;
+  display: inline;
+  text-decoration: none;
 }
 
 .info__text--footer {
@@ -264,7 +270,6 @@ a:hover {
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   font-family: "Roboto", sans-serif;
   color: #fff;
-  text-transform: uppercase;
 }
 
 .main-menu__link--footer {
@@ -894,6 +899,7 @@ a:hover {
 
   .site-header {
     background-position: center 0%;
+    height: 100vh;
   }
 
   .site-header__features {
@@ -924,10 +930,17 @@ a:hover {
 
   .info__list {
     margin-top: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
 
   .info__item {
     padding-right: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .info__item:last-child {
@@ -981,13 +994,12 @@ a:hover {
     color: #a3683f;
     -webkit-box-shadow: none;
     box-shadow: none;
-    text-transform: lowercase;
     -webkit-transition: 0.3s ease-in-out all;
     transition: 0.3s ease-in-out all;
   }
 
   .main-menu__link:hover {
-    color: #f3e2d4;
+    color: #f9b030;
   }
 
   .main-menu--shown {
@@ -996,6 +1008,10 @@ a:hover {
 
   .menu-icon {
     display: none;
+  }
+
+  .promo {
+    height: 100vh;
   }
 
   .promo__text {
@@ -1016,6 +1032,10 @@ a:hover {
 
   .advantages__content {
     width: 350px;
+  }
+
+  .about__img {
+    height: 481px;
   }
 
   .reviews__quote {

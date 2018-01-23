@@ -19,10 +19,10 @@ html(lang="en")
                         ul.info__list
                             li.info__item
                                 span.info__text Email:
-                                    span.info__text.info__text--light  bogdan.yankevich@gmail.com
+                                    a.info__text.info__text--light(href="mailto:bogdan.yankevich@gmail.com")  bogdan.yankevich@gmail.com
                             li.info__item
                                     span.info__text Телефон:
-                                        span.info__text.info__text--light  +7 (916)-331-78-42
+                                    a.info__text.info__text--light(href="tel:+79163317842")  +7 (916)-331-78-42
                     nav.main-menu
                         ul.main-menu__list
                             li.main-menu__item: a.main-menu__link(href="#") Главная
@@ -120,8 +120,8 @@ html(lang="en")
                 ul.reviews__list
                     li.reviews__item
                         a.reviews__link(href="feedback.html")
-                            .reviews__feedback
-                                img(src="./img/feedback.svg" alt="feedback")
+                            //- .reviews__feedback
+                            //-     img(src="./img/feedback.svg" alt="feedback")
                         .reviews__avatar
                             img(src="./img/Ludmila.jpg" alt="person 1")
                         .reviews__content
@@ -130,8 +130,8 @@ html(lang="en")
 
                     li.reviews__item
                         a.reviews__link(href="feedbackg.html")
-                            .reviews__feedback
-                                img(src="./img/feedback.svg" alt="feedback")
+                            //- .reviews__feedback
+                            //-     img(src="./img/feedback.svg" alt="feedback")
                         .reviews__avatar
                             img(src="./img/Olga.jpg" alt="person 2")
                         .reviews__content
@@ -148,7 +148,7 @@ html(lang="en")
                     .form__group
                         input.form__input(placeholder="Ваше e-mail")
                     .form__group
-                        textarea.form__textarea(placeholder="Текс письма")
+                        textarea.form__textarea(placeholder="Текст письма")
                     .form__group
                         input.form__button(type="submit" value="Отправить")
                 .steps
@@ -172,10 +172,10 @@ html(lang="en")
                         ul.info__list.info__list--footer
                             li.info__item.info__item--footer
                                 span.info__text.info__text--footer Email:
-                                    span.info__text.info__text--light.info__text--footer bogdan.yankevich@gmail.com
+                                    a.info__text.info__text--light.info__text--footer(href="mailto: bogdan.yankevich@gmail.com") bogdan.yankevich@gmail.com
                             li.info__item.info__item--footer
                                     span.info__text.info__text--footer Телефон:
-                                        span.info__text.info__text--light.info__text--footer +7 (916)-331-78-42
+                                        a.info__text.info__text--light.info__text--footer(href="tel: +79163317842") +7 (916)-331-78-42
             
                     nav.main-menu--footer
                         ul.main-menu__list--footer

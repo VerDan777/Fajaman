@@ -90,16 +90,16 @@
 		text-shadow: 0 2px 6px rgba(0, 0, 0, .15);
 		font-family: $Roboto;
 		color: #fff;
-		text-transform: uppercase;
+		// text-transform: uppercase;
 
 		@include atDesktop {
 			color: #a3683f;
 			box-shadow: none;
-			text-transform: lowercase;
+			// text-transform: lowercase;
 			transition: 0.3s ease-in-out all;
 
 			&:hover {
-				color: rgb(243, 226, 212);
+				color: #f9b030;
 			}
 		}
 
